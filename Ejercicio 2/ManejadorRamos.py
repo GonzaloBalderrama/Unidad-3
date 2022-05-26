@@ -28,9 +28,7 @@ class ManejadorRamos:
                     flores[i].sumarVendida(cant)
                 i+=1
         self.agregarRamo(ramo)
-        print(ramo)
-        ramo.borrarFlores()
-        
+        print(ramo)        
 
     def masVendidas(self, flores,cant):
         flores.sort()
@@ -48,6 +46,7 @@ class ManejadorRamos:
                 flores = ramo.getFlores()
                 while i<len(flores):
                     print(flores[i].getNombre())
+                    i += 1
 
     def mostrarListaRamos(self):
         for ramo in self.__listaRamos:

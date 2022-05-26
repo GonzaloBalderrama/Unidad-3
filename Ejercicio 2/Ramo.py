@@ -4,8 +4,7 @@ class Ramo:
     
     def __init__(self, tam, flor = None):
         self.__tamano = tam
-        if flor != None:
-            self.agregarFlor(flor)
+        self.__flores = []        
 
     def __str__(self):
         s = f"\n{self.__tamano}\n"
