@@ -1,0 +1,59 @@
+{
+    "__class__": "Manejador",
+    "aparatos": [
+    {
+        "__class__": "Heladera",
+        "__atributos__": {
+        "mar": "Samsung",
+        "mod": "Hg124",
+        "col": "Negro",
+        "pais": "China",
+        "precio": 15500,
+        "capa":50,
+        "free":"True",
+        "cicl":"True"
+        }
+    },
+    {
+        "__class__": "Lavarropa",
+        "__atributos__": {
+        "mar": "Samsung",
+        "mod": "Hg124",
+        "col": "Negro",
+        "pais": "China",
+        "precio": 15500,
+        "capa":"5kg",
+        "vel":"600rpm",
+        "prog":"100",
+        "carga":"superior"
+        }
+    },
+    {
+        "__class__": "Heladera",
+        "__atributos__": {
+        "mar": "Samsung",
+        "mod": "Hg124",
+        "col": "Negro",
+        "pais": "China",
+        "precio": 15500,
+        "capa":20,
+        "free":"False",
+        "cicl":"False"
+        }
+    },
+    {
+        "__class__": "Televisor",
+        "__atributos__": {
+        "mar": "Samsung",
+        "mod": "Hg124",
+        "col": "Negro",
+        "pais": "China",
+        "precio": 15500,
+        "tdepant":"lcd",
+        "pulg":"1920x1080",
+        "defi":"hd",
+        "conex":"True"
+        }
+    }
+    ]
+}
