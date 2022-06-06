@@ -13,12 +13,12 @@ class Televisor(Aparato):
                 self.__conexion = conex
 
         def __str__(self):
-                return f"{self.getMarca()} - {self.__tdepantalla}, {self.__pulgadas}, ${self.getPrecio()}"
+                return f"TELEVISOR: {self.getMarca()} - {self.getPais()} - ${self.getPrecio()}"
 
         def importeTelevisor(self):
-                total = super().getPrecioBase()
-                definicion = self.getTipoDefinicion()
-                internet = self.getInternet()
+                total = self.__actual.getDatos().getPrecioBase()
+                definicion = self.__actual.getDatos().getTipoDefinicion()
+                internet = self.__actual.getDatos().getInternet()
                 if definicion == 'SD':
                         imp = total + (total / 100)
                 elif definicion == 'HD':
@@ -27,6 +27,7 @@ class Televisor(Aparato):
                         imp = total + (total * 3 / 100)
                 if internet == True:
                         imp += total + (total * 10 / 100)
+                return imp
 
         def toJSON(self):
                 d = dict(

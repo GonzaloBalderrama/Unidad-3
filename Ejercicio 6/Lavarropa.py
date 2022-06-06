@@ -13,16 +13,20 @@ class Lavarropa(Aparato):
         self.__cantprog = prog
         self.__tipodecarga = carga
 
-        def __str__(self):
-                return f"{self.getMarca()} - ${self.getPrecio()}"
+    def __str__(self):
+        return f"LAVARROPA: {self.getMarca()} - {self.getPais()} - ${self.getPrecio()}"
 
     def importeLavarropa(self):
-        total = super().getPrecioBase()
-        capacidad = self.getCapacidadLavado()
+        total = self.__actual.getDatos().getPrecioBase()
+        capacidad = self.__actual.getDatos().getCapacidadLavado()
         if  capacidad <= 5:
                 imp = total + (total / 100)
         elif capacidad > 5:
                 imp = total + (total * 3 / 100)
+        return imp
+
+    def getTipoDeCarga(self):
+            return self.__tipodecarga
 
     def toJSON(self):
                 d = dict(

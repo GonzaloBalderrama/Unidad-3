@@ -1,59 +1,73 @@
 {
     "__class__": "Manejador",
     "aparatos": [
-    {
-        "__class__": "Heladera",
-        "__atributos__": {
-        "mar": "Samsung",
-        "mod": "Hg124",
-        "col": "Negro",
-        "pais": "China",
-        "precio": 15500,
-        "capa":50,
-        "free":"True",
-        "cicl":"True"
+        {
+            "__class__": "Televisor",
+            "__atributos__": {
+                "mar": "HTC",
+                "mod": "HW-3500",
+                "col": "Gris",
+                "pais": "Argetina",
+                "precio": 57600,
+                "tdepant": "LED",
+                "pulg": 42,
+                "defi": "FULL HD",
+                "conex": true
+            }
+        },
+        {
+            "__class__": "Televisor",
+            "__atributos__": {
+                "mar": "Samsung",
+                "mod": "SMG-55",
+                "col": "Negro",
+                "pais": "Corea",
+                "precio": 43500,
+                "tdepant": "LCD",
+                "pulg": "1920x1080",
+                "defi": "HD",
+                "conex": true
+            }
+        },
+        {
+            "__class__": "Heladera",
+            "__atributos__": {
+                "mar": "LG",
+                "mod": "JJT-210",
+                "col": "Negro",
+                "pais": "Argentina",
+                "precio": 98900,
+                "capa": 20,
+                "free": false,
+                "cicl": false
+            }
+        },
+        {
+            "__class__": "Lavarropa",
+            "__atributos__": {
+                "mar": "Drean",
+                "mod": "CH-500",
+                "col": "Blanco",
+                "pais": "China",
+                "precio": 62300,
+                "capa": "5kg",
+                "vel": "600rpm",
+                "prog": "15",
+                "carga": "Superior"
+            }
+        },
+        {
+            "__class__": "Heladera",
+            "__atributos__": {
+                "mar": "Phillips",
+                "mod": "WWTD-1500",
+                "col": "Gris",
+                "pais": "China",
+                "precio": 87500,
+                "capa": 50,
+                "free": true,
+                "cicl": true
+            }
         }
-    },
-    {
-        "__class__": "Lavarropa",
-        "__atributos__": {
-        "mar": "Samsung",
-        "mod": "Hg124",
-        "col": "Negro",
-        "pais": "China",
-        "precio": 15500,
-        "capa":"5kg",
-        "vel":"600rpm",
-        "prog":"100",
-        "carga":"superior"
-        }
-    },
-    {
-        "__class__": "Heladera",
-        "__atributos__": {
-        "mar": "Samsung",
-        "mod": "Hg124",
-        "col": "Negro",
-        "pais": "China",
-        "precio": 15500,
-        "capa":20,
-        "free":"False",
-        "cicl":"False"
-        }
-    },
-    {
-        "__class__": "Televisor",
-        "__atributos__": {
-        "mar": "Samsung",
-        "mod": "Hg124",
-        "col": "Negro",
-        "pais": "China",
-        "precio": 15500,
-        "tdepant":"lcd",
-        "pulg":"1920x1080",
-        "defi":"hd",
-        "conex":"True"
-        }
-    }
     ]
 }
